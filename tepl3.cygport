@@ -1,0 +1,34 @@
+ORIG_PN="tepl"
+inherit gnome2
+
+NAME="tepl3"
+VERSION=3.0.0
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="GTK+ text editor framework"
+DESCRIPTION="Tepl is a library that eases the development of GtkSourceView-based
+text editors and IDEs."
+
+PKG_NAMES="libtepl3_0 libtepl3-devel libtepl3-doc girepository-Tepl3"
+libtepl3_0_CONTENTS="
+	usr/bin/cygamtk-3-0.dll
+	usr/bin/cygtepl-3-0.dll
+	usr/share/doc/tepl3/
+	usr/share/locale/*/LC_MESSAGES/tepl-3.mo
+"
+libtepl3_devel_CONTENTS="
+	usr/include/amtk-3/
+	usr/include/tepl-3/
+	usr/lib/libamtk-3.dll.a
+	usr/lib/libtepl-3.dll.a
+	usr/lib/pkgconfig/amtk-3.pc
+	usr/lib/pkgconfig/tepl-3.pc
+"
+libtepl3_doc_CATEGORY="Doc"
+libtepl3_doc_CONTENTS="
+	usr/share/gtk-doc/html/tepl-3.0/
+"
+girepository_Tepl3_CONTENTS="
+	usr/*/gir*-1.0/Amtk-3.*
+	usr/*/gir*-1.0/Tepl-3.*
+"
